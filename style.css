@@ -1,0 +1,148 @@
+/* ACIP Internship Task 1
+Author: Zaryab Hussain
+CSS File */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  /* border-radius: 8px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 75%;
+  height: 80%;
+  border: 35px solid #1a80e7;
+}
+
+h2 {
+  text-align: left;
+  color: #605d5d;
+}
+
+h3 {
+  text-align: left;
+  color: #8a8383;
+}
+
+.form-group > input {
+  width: 80%;
+}
+
+.form-group {
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.formshow {
+  position: absolute;
+  top: 0;
+  height: 90vh;
+  width: 80vw;
+}
+
+.formdata {
+  position: absolute;
+  top: 0;
+  min-height: 90vh;
+  width: 80vw;
+}
+
+.cross {
+  position: absolute;
+  right: 15px;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.form-group label {
+  flex-basis: 25%;
+  text-align: right;
+  padding-right: 10px;
+  color: #060505;
+}
+
+.form-group input {
+  flex-basis: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 75px;
+  border: none;
+  background-color: #0b70d6;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button::after {
+  padding-left: 5px;
+  content: " \2192";
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#formData {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 40px;
+    min-height: 180vh;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    height: 100%;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .form-group label {
+    text-align: left;
+    padding-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 80%;
+  }
+}
